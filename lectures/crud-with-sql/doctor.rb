@@ -10,7 +10,7 @@ class Doctor
   end
 
   def save
-    if is_this_object_persisted_in_the_db?
+    if is_this_object_persisted_in_the_db? # Of course this won't work, you need to really check that. Remember how? Just see if it has an id ;)
       DB.execute("UPDATE ...")
     else
       DB.execute("INSERT INTO doctors () VALUES ()")
